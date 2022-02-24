@@ -9,3 +9,6 @@
 ### 画像
 
 ### カラー
+
+### 推奨ブラウザ
+Safari,Chrome,Brave

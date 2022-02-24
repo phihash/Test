@@ -60,14 +60,28 @@ main{
   display: flex;
 }
 
+.footer{
+  justify-content: space-around;
+}
+
+
+
 .sns-link-item{
   cursor: pointer;
+  padding: 0 0.6rem;
 }
 .sns-link-item:hover{
   opacity: 0.5;
   transition: all 0.3s;
 }
 
+
+@media screen and (min-width: 980px) {
+  /* 980px以上用（PC用）の記述 */
+  .footer{
+    padding-top: 2.2rem;
+  }
+}
 
 .footer{
   background-color:#8BDBE3;
