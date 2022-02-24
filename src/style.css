@@ -6,6 +6,10 @@
   text-decoration: none;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 li{
   list-style:none ;
 }
@@ -30,18 +34,40 @@ main{
   background-color:#8BDBE3;
 }
 
-.d-flex{
-  display: flex;
+@media screen and (min-width: 980px) {
+      /* 980px以上用（PC用）の記述 */
+      .d-flex{
+        display: flex;
+      }
 }
+
+
+
+
 
 .content{
   background-color: green;
 }
 
 .sub-section{
-  background-color: black;
+  background-color: rgb(248, 146, 146);
 
 }
+
+
+/* SNSリンクは常にフレックスにしておきたいので */
+.footer > .d-flex{
+  display: flex;
+}
+
+.sns-link-item{
+  cursor: pointer;
+}
+.sns-link-item:hover{
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
 
 .footer{
   background-color:#8BDBE3;
