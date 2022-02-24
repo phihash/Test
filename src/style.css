@@ -22,8 +22,12 @@ main{
   overflow-x: hidden;
 }
 
+.site-title{
+  color:whitesmoke
+}
+
 .header{
-  background-color: red;
+  background-color:#8BDBE3;
 }
 
 .d-flex{
@@ -40,5 +44,5 @@ main{
 }
 
 .footer{
-  background-color: aqua;
+  background-color:#8BDBE3;
 }
