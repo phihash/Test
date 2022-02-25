@@ -36,7 +36,6 @@ main{
   color:whitesmoke;
   text-align: center;
   padding-top: 1.2rem;
-  
 }
 
 .header{
@@ -87,8 +86,11 @@ main{
 /*  */
 .recruitment-area{
   background-color: #8BDBE3;
+  min-height: 70vh;
 }
 
+
+/* main content */
 .content{
   background-color: green;
 }
@@ -99,16 +101,24 @@ main{
 }
 
 
-/* SNSリンクは常にフレックスにしておきたいので */
-.footer > .d-flex{
-  display: flex;
+
+@media screen and (min-width: 980px) {
+  /* 980px以上用（PC用）の記述 */
+  .sns-link-wrapper{
+    justify-content: flex-end;
+  }
 }
 
-.footer{
-  justify-content: space-around;
+
+.d-sns-flex{
+  display:flex;
 }
 
 
+.sns-link-wrapper{
+  padding-top: 1rem;
+  justify-content: center;
+}
 
 .sns-link-item{
   cursor: pointer;
@@ -125,8 +135,14 @@ main{
   .footer{
     padding-top: 2.2rem;
   }
+
 }
 
 .footer{
   background-color:#8BDBE3;
+}
+
+.copyright-wrapper{
+  padding: 1.6rem;
+  text-align: center;
 }
