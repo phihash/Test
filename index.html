@@ -28,6 +28,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=M+PLUS+1p:wght@500&display=swap" rel="stylesheet">
+    <!-- swiper -->
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
 </head>
 <body>
 <div class="SiteWrapper">
@@ -41,11 +46,31 @@
       </ul>
     </nav>
   </header>
-  <!-- indexにヒーロー画像 -->
+
+
+
+
   <!-- すワイパーJSいれたい -->
   <main class="main">
-
+    <div class="swiper">
+      <!-- 必要に応じたwrapper -->
+      <div class="swiper-wrapper">
+        <!-- スライド -->
+        <div class="swiper-slide">
+          <img src="http://placehold.jp/800x480.png">
+        </div>
+        <div class="swiper-slide">
+          <img src="http://placehold.jp/800x480.png">
+        </div>
+        <div class="swiper-slide">
+          <img src="http://placehold.jp/800x480.png">
+        </div>
+      </div>
+    </div>
   </main>
+
+
+
   <!-- 部員募集欄 -->
   <aside>
   <div class="recruitment-area">
@@ -79,5 +104,9 @@
   </footer>
 
 </div>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".swiper", {});
+</script>
 </body>
 </html>
