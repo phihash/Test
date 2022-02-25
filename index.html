@@ -33,21 +33,28 @@
   rel="stylesheet"
   href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
 />
+<style>
+#modal-1 {
+  display: none;
+}
+#modal-1.is-open {
+  display: block;
+}
+  
+</style>
 </head>
 <body>
 <div class="SiteWrapper">
   <header class="header">
     <h1 class="site-title">〇〇大学釣り部</h1>
-    <nav>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#sns-link">SNS</a></li>
-      </ul>
-    </nav>
+    <section class="wrapper">
+      <a class="modal__btn" data-micromodal-trigger="modal-1" role="button">
+        <span class="burger"></span>
+        <span class="burger"></span>
+        <span class="burger"></span>
+      </a>
+    </section>
   </header>
-
-
 
 
   <!-- すワイパーJSいれたい -->
@@ -103,11 +110,33 @@
       <small class="copyright"> &copy; phihash 2022</small>
      </div>
   </footer>
+  
+  
+<!-- 以下モーダル -->
+<div id="modal-1" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-list-item"><a href="about.html">About</a></li>
+          <li class="nav-list-item"><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
 
+    
 </div>
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
 <script>
   const swiper = new Swiper(".swiper", {});
+  MicroModal.init({
+  awaitOpenAnimation: true,
+  disableScroll:true
+});
+
 </script>
 </body>
 </html>

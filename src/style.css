@@ -85,7 +85,7 @@ main{
 
 /*  */
 .recruitment-area{
-  background-color: #8BDBE3;
+  background-color: #00c531;
   min-height: 70vh;
 }
 
@@ -100,15 +100,60 @@ main{
 
 }
 
+/* もだｌ */
+
+.burger{
+  background-color: black;
+  border: 6px solid;
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container{
+  font-family: 'Lato', sans-serif;
+  background-color: #ffffff;
+  width: 20vw;
+  height: 20vh;
+  border-radius: 1rem;
+}
+
+.nav{
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.nav-list-item > a{
+  display: block;
+  padding: 1rem;
+}
+
+.nav-list-item > a:hover{
+  opacity: 0.5;
+}
+
 
 
 @media screen and (min-width: 980px) {
   /* 980px以上用（PC用）の記述 */
-  .sns-link-wrapper{
-    justify-content: flex-end;
+  .modal-container{
+    width: 20vw;
+    height: 20vh;
   }
 }
-
 
 .d-sns-flex{
   display:flex;
@@ -120,6 +165,15 @@ main{
   justify-content: center;
 }
 
+@media screen and (min-width: 980px) {
+  /* 980px以上用（PC用）の記述 */
+  .sns-link-wrapper{
+    justify-content: flex-end;
+    padding-right: 4rem;/*右寄せのため  */
+  }
+}
+
+
 .sns-link-item{
   cursor: pointer;
   padding: 0 0.6rem;
@@ -130,13 +184,11 @@ main{
 }
 
 
-@media screen and (min-width: 980px) {
-  /* 980px以上用（PC用）の記述 */
+
   .footer{
     padding-top: 2.2rem;
   }
 
-}
 
 .footer{
   background-color:#8BDBE3;
